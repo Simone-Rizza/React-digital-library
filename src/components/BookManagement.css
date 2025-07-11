@@ -1,0 +1,164 @@
+.book-management {
+  padding: 20px;
+}
+
+.book-management h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.book-management-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.book-thumbnail {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.book-details {
+  flex: 1;
+}
+
+.book-details h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.book-authors {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-style: italic;
+}
+
+.book-copies {
+  margin-top: 10px;
+}
+
+.copy-display {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.copy-info {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.edit-copies {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.copy-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-input label {
+  font-weight: 500;
+  min-width: 120px;
+}
+
+.copy-input input {
+  width: 80px;
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.book-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.edit-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.save-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.save-btn:hover {
+  background: #218838;
+}
+
+.cancel-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.cancel-btn:hover {
+  background: #5a6268;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}

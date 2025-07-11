@@ -1,0 +1,159 @@
+/* Theme-aware styles for custom components */
+
+/* LoanHistory Component */
+.loan-history {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.loan-item {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.loan-item.overdue {
+  background-color: #fff5f5;
+  border-left-color: var(--danger-color);
+}
+
+.loan-filters button {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.loan-filters button:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.loan-filters button.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+/* UserManagement Component */
+.user-management {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.user-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.user-card.disabled {
+  background-color: var(--bg-tertiary);
+}
+
+.search-input {
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--text-primary);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.stat-card {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.users-section {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+}
+
+/* BookManagement Component */
+.book-management {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.book-management-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.copy-input input {
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--text-primary);
+}
+
+/* Modal styles */
+.user-history-modal .modal-content {
+  background-color: var(--modal-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.modal-header {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* BookCard Component */
+.book-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+/* SearchFilters Component */
+.search-filters {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+/* ReviewCard Component */
+.review-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+/* Loading and No Data states */
+.loading,
+.no-loans,
+.no-users,
+.no-books {
+  color: var(--text-muted);
+}
+
+/* Badges and Status indicators */
+.status-badge,
+.role-badge,
+.renewal-status {
+  color: var(--text-primary);
+}
+
+/* General text colors */
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Ensure all custom buttons inherit theme */
+.action-btn,
+.edit-btn,
+.delete-btn,
+.save-btn,
+.cancel-btn,
+.enable-btn,
+.disable-btn,
+.view-btn,
+.approve-btn {
+  transition: all 0.2s ease;
+}
